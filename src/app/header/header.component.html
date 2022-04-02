@@ -1,0 +1,75 @@
+<nav class="bg-transparent">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between">
+      <div>
+        <!-- Website Logo -->
+        <a class="flex items-center py-6 px-2">
+          <span class="font-bold font-poppins text-black text-3xl">Outfitted.</span>
+        </a>
+      </div>
+      <!-- Primary Navbar items -->
+      <div class="flex">
+        <div class="hidden md:flex items-center space-x-10 text-sm lg:text-base font-poppins">
+          <a class="py-4 text-black font-semibold">About</a>
+          <a class="py-4 text-black font-semibold">How It Works</a>
+          <a class="py-4 text-secondary_off_white font-semibold">Developer</a>
+          <a class="py-4 text-secondary_off_white font-semibold">Donate</a>
+        </div>
+      </div>
+        <!-- Secondary Navbar items -->
+      <div class="hidden md:flex items-center space-x-3 ">
+        <a
+        class=" bg-secondary_off_white text-primary_red
+        py-2 px-4 font-semibold font-poppins rounded-xl text-sm lg:text-base">Create Account</a>
+      </div>
+      <!-- Mobile menu button -->
+      <div
+      (click)="toggleBurgerMenu()"
+      class="md:hidden flex items-center mr-4"
+      >
+        <button class="outline-none mobile-menu-button">
+        <svg class=" w-6 h-6"
+          x-show="!showMenu"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke="#313131"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+      class="bg-primary_red p-4 fixed w-1/2 right-0 h-screen"
+      *appBurgerMenuToggle="showBurgerMenu">
+        <ul>
+          <div
+            (click)="toggleBurgerMenu()"
+            class="flex justify-end p-3">
+              <button class="outline-none mobile-menu-button">
+              <svg class=" w-6 h-6"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="#fefdfc"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+          <li class="mt-5 pl-4 font-bold font-poppins text-sm text-primary_off_white"><a>About</a></li>
+          <li class="mt-5 pl-4 font-bold font-poppins text-sm text-primary_off_white"><a >How It Works</a></li>
+          <li class="mt-5 pl-4 font-bold font-poppins text-sm text-primary_off_white"><a >Developer</a></li>
+          <li class="mt-5 pl-4 font-bold font-poppins text-sm text-primary_off_white"><a>Donate</a></li>
+          <li class="flex items-center"><a class="my-8 bg-secondary_off_white text-primary_red py-2 px-4 font-bold font-poppins rounded-xl text-sm">Create Account</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
