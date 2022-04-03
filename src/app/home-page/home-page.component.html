@@ -1,9 +1,19 @@
-<app-header class="fixed top-0 w-screen"></app-header>
-<section class="">
-  <div class="block md:flex justify-start h-screen w-screen">
-    <div class=" bg-secondary_off_white w-screen md:w-1/2 h-screen md:h-full">
+<app-header class="absolute top-0 w-screen"></app-header>
+<section class="block md:flex h-screen w-screen">
+    <div class="flex justify-center items-center bg-secondary_off_white w-screen md:w-1/2 h-full min-h-[650px]">
+      <div class="w-1/2 ml-24">
+        <h1 class="text-5xl xl:text-6xl font-bold text-black min-w-[250px]">We know What Suits You The Best.</h1>
+        <h4 class="text-sm md:text-base font-base text-black mt-5 font-semibold">Let us know what you like to wear and we will style you the way you want.</h4>
+        <button
+        class=" bg-primary_red text-primary_off_white
+        py-4 px-8 mt-5 font-bold rounded-2xl
+        text-lg drop-shadow-[0_0_6px_rgba(255,104,104,0.6)]">Create Account</button>
+      </div>
     </div>
-    <div class="hidden md:flex bg-primary_red w-1/2 h-full ">
+    <div class="hidden md:flex bg-primary_red w-1/2 min-h-[650px] h-full">
+      <div class="flex items-center">
+        <app-card></app-card>
+        <app-card></app-card>
+      </div>
     </div>
-  </div>
 </section>

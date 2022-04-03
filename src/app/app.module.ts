@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { BurgerMenuToggleDirective } from './header/burger-menu-toggle.directive';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomePageComponent,
-    BurgerMenuToggleDirective
+    BurgerMenuToggleDirective,
+    CardComponent
   ],
   imports: [
     BrowserModule,
