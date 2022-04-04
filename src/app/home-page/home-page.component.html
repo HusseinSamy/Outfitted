@@ -1,19 +1,58 @@
-<app-header class="absolute top-0 w-screen"></app-header>
-<section class="block md:flex h-screen w-screen">
-    <div class="flex justify-center items-center bg-secondary_off_white w-screen md:w-1/2 h-full min-h-[650px]">
-      <div class="w-1/2 ml-24">
-        <h1 class="text-5xl xl:text-6xl font-bold text-black min-w-[250px]">We know What Suits You The Best.</h1>
-        <h4 class="text-sm md:text-base font-base text-black mt-5 font-semibold">Let us know what you like to wear and we will style you the way you want.</h4>
-        <button
-        class=" bg-primary_red text-primary_off_white
-        py-4 px-8 mt-5 font-bold rounded-2xl
-        text-lg drop-shadow-[0_0_6px_rgba(255,104,104,0.6)]">Create Account</button>
-      </div>
+<section class="grid grid-cols-12 grid-rows-row-custom-layout overflow-x-hidden max-h-[500px] md:max-h-[1080px]">
+  <app-header class="row-[1_/_1] col-span-full z-10"></app-header>
+
+
+    <div class="w-full bg-secondary_off_white md:col-[1_/_7] row-[1_/_-1] h-full max-h-screen min-h-[900px]">
     </div>
-    <div class="hidden md:flex bg-primary_red w-1/2 min-h-[650px] h-full">
-      <div class="flex items-center">
-        <app-card></app-card>
-        <app-card></app-card>
-      </div>
+
+    <div class="hidden md:block bg-primary_red col-[7_/_-1] row-[1_/_-1] h-full max-h-screen min-h-[900px]">
     </div>
+
+      <div class="px-9 xl:px-0 row-[2_/_-1] col-[1_/_-1]">
+
+        <div class="sm:my-0 md:mt-36 lg:mt-48 flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto">
+
+          <div class="min-w-[250px] max-w-[500px] self-start mt-16">
+
+            <h1 class="text-5xl xl:text-6xl font-bold text-black min-w-[250px]">We know What Suits You The Best.</h1>
+            <h4 class="text-sm md:text-lg text-black mt-5 font-normal">Let us know what you like to wear and we will style you the way you want.</h4>
+            <button
+            class=" bg-primary_red text-secondary_off_white
+            py-6 px-10 mt-10 font-bold rounded-2xl
+            text-xl drop-shadow-[0_0_6px_rgba(255,104,104,0.6)]">Create Account</button>
+          </div>
+
+          <div class="hidden md:flex flex-row justify-end w-full max-w-[650px] max-h-[780px] min-w-[500px] min-h-[710px]">
+
+            <div class="hidden md:block mr-6 max-w-[325px] max-h-[580px] min-w-[240px] min-h-[435px] w-[100%] h-auto">
+              <app-card ></app-card>
+            </div>
+
+            <div class="mb-3 mt-32 hidden lg:block max-w-[325px] max-h-[580px] min-w-[240px] min-h-[435px] w-[100%] h-auto">
+              <app-card></app-card>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 </section>
+
+<section class="w-full pt-10 pb-24">
+<div class="max-w-[1200px] flex flex-col md:flex-row justify-evenly xl:justify-between items-center mx-auto">
+  <div class="min-w-[250px] max-w-[400px]">
+    <h1 class="text-3xl font-bold">What is outfitted?</h1>
+    <h4 class="text-base font-medium">outfitted is not meant to be a start up at all, it's only an idea that I have decided to put the time to make it alive.
+      it was a momentary idea that came into my mind while I was shopping for a new outfit and that question lighted my mind;
+       why don't we make some kind of software that facilitates the frustration that comes with the outfit choosing?</h4>
+  </div>
+
+<div class="flex flex-col justify-center items-center">
+  <p class="text-6xl font-extrabold">Outfitted.</p>
+  <p class="text-sm font-extrabold">©All rights reserved</p>
+</div>
+
+</div>
+</section>
+
