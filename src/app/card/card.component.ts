@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.sass']
 })
 export class CardComponent implements OnInit {
-  imgSource: string = '../../assets/Photos/0e688544579dc89f02913455bcb5ac92.jpg';
+  imgSource: string = '../../assets/Photos/home page photo 1.jpg';
   tags:string[] = ['trousers','bags','shoes'];
   constructor() { }
 

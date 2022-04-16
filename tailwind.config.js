@@ -13,15 +13,16 @@ module.exports = {
       'primary_red': '#f33a47',
       'primary_off_white': '#fefdfc',
       'secondary_off_white': '#fcf9f2',
-      'black': '#313131'
+      'black': '#313131',
+      'nav-gradient': 'rgb(49,49,49,0.5)'
     },
     fontFamily: {
-      'poppins': ['poppins']
+      'poppins': ['Poppins']
     },
     extend: {
       gridTemplateRows: {
         // 'col-custom-layout': 'repeat(12,minmax(900px, 1fr))',
-        'row-custom-layout': '88px repeat(4, minmax(200px, 1fr))'
+        'row-custom-layout': '88px repeat(4, minmax(0,1fr))'
       },
     },
     plugins: [],

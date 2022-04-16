@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="440" height="563" viewBox="0 0 440 563">
+  <defs>
+    <filter id="Rectangle_34" x="0" y="0" width="440" height="563" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#f33a47" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_186" data-name="Group 186" transform="translate(-742 -250)">
+    <g id="Group_173" data-name="Group 173" transform="translate(-427 58)">
+      <g transform="matrix(1, 0, 0, 1, 1169, 192)" filter="url(#Rectangle_34)">
+        <rect id="Rectangle_34-2" data-name="Rectangle 34" width="350" height="473" rx="20" transform="translate(45 45)" fill="#fff"/>
+      </g>
+      <rect id="Rectangle_35" data-name="Rectangle 35" width="310" height="46" rx="15" transform="translate(1234 429)" fill="#707070" opacity="0.03"/>
+      <rect id="Rectangle_36" data-name="Rectangle 36" width="310" height="46" rx="15" transform="translate(1234 363)" fill="#707070" opacity="0.03"/>
+      <rect id="Rectangle_37" data-name="Rectangle 37" width="150" height="46" rx="15" transform="translate(1234 297)" fill="#707070" opacity="0.03"/>
+      <rect id="Rectangle_46" data-name="Rectangle 46" width="150" height="46" rx="15" transform="translate(1234 495)" fill="#707070" opacity="0.03"/>
+      <rect id="Rectangle_38" data-name="Rectangle 38" width="150" height="46.174" rx="15" transform="translate(1393.656 297.006)" fill="#707070" opacity="0.03"/>
+      <text id="first_name" data-name="first name" transform="translate(1245 325)" fill="#313131" font-size="11" font-family="Poppins-Medium, Poppins" font-weight="600" opacity="0.7"><tspan x="0" y="0">First Name</tspan></text>
+      <text id="last_name" data-name="last name" transform="translate(1405.2 325.166)" fill="#313131" font-size="11" font-family="Poppins-Medium, Poppins" font-weight="600" opacity="0.7"><tspan x="0" y="0">Last Name</tspan></text>
+      <text id="email" transform="translate(1245 393)" fill="#313131" font-size="11" font-family="Poppins-Medium, Poppins" font-weight="600" opacity="0.7"><tspan x="0" y="0">Email</tspan></text>
+      <text id="password" transform="translate(1245 459)" fill="#313131" font-size="11" font-family="Poppins-Medium, Poppins" font-weight="600" opacity="0.7"><tspan x="0" y="0">Password</tspan></text>
+      <text id="Age" transform="translate(1245 522)" fill="#313131" font-size="11" font-family="Poppins-Medium, Poppins" font-weight="600" opacity="0.7"><tspan x="0" y="0">Age</tspan></text>
+      <text id="already_have_an_account_" data-name="already have an account?" transform="translate(1303 663)" fill="#f33a47" font-size="13" font-family="Poppins-Medium, Poppins" font-weight="600"><tspan x="0" y="0">already have an account?</tspan></text>
+      <g id="Group_175" data-name="Group 175" transform="translate(-6 78)">
+        <rect id="Rectangle_40" data-name="Rectangle 40" width="230" height="35" rx="10" transform="translate(1280 506)" fill="#f33a47"/>
+        <text id="Create_Account" data-name="Create Account" transform="translate(1351 528)" fill="#fcf9f2" font-size="11" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Create Account</tspan></text>
+      </g>
+      <g id="Group_177" data-name="Group 177" transform="translate(-6 78)">
+        <rect id="Rectangle_40-2" data-name="Rectangle 40" width="230" height="35" rx="10" transform="translate(1280 506)" fill="#f33a47"/>
+        <text id="Create_Account-2" data-name="Create Account" transform="translate(1351 528)" fill="#fcf9f2" font-size="11" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Create Account</tspan></text>
+      </g>
+    </g>
+    <g id="Rectangle_52" data-name="Rectangle 52" transform="translate(987 570)" fill="none" stroke="#f33a47" stroke-width="1">
+      <rect width="15" height="15" rx="7.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="14" height="14" rx="7" fill="none"/>
+    </g>
+    <g id="Rectangle_53" data-name="Rectangle 53" transform="translate(1039 571)" fill="none" stroke="#f33a47" stroke-width="1">
+      <rect width="15" height="15" rx="7.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="14" height="14" rx="7" fill="none"/>
+    </g>
+    <text id="Male" transform="translate(1007 581)" fill="#313131" font-size="11" font-family="Poppins-Medium, Poppins" font-weight="600"><tspan x="0" y="0">Male</tspan></text>
+    <text id="Female" transform="translate(1059 582)" fill="#313131" font-size="11" font-family="Poppins-Medium, Poppins" font-weight="600"><tspan x="0" y="0">Female</tspan></text>
+    <rect id="Rectangle_54" data-name="Rectangle 54" width="7" height="7" rx="3.5" transform="translate(991 574)" fill="#f33a47"/>
+  </g>
+</svg>
