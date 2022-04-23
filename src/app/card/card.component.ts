@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.sass']
 })
 export class CardComponent implements OnInit {
-  imgSource: string = '../../assets/Photos/home page photo 1.jpg';
-  tags:string[] = ['trousers','bags','shoes'];
+
+  @Input() !imgSource: string = '../../assets/Photos/home page photo 1.jpg';
+  tags: string[] = ['trousers','bags','shoes'];
+  @Input() backgroundColor: string = '';
+  @Input() shadowColor: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
