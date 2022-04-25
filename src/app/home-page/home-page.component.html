@@ -67,20 +67,20 @@
 
   <div class="max-w-[1200px] flex flex-col mx-auto overflow-hidden">
 
-      <p class="text-3xl self-start font-semibold mb-24"> How does outfitted work?</p>
+      <p class="text-3xl self-start font-semibold mb-24 ml-8 sm:ml-12 md:ml-18 lg:ml-5"> How does outfitted work?</p>
 
     <div class="max-w-[1200px] grid grid-cols-12 grid-rows-1 ">
-      <div class="col-[1_/_6] row-[1_/_-1]">
+      <div class="col-[2_/_12] justify-self-center lg:col-[1_/_6] row-[4_/_-1] lg:row-[1_/_-1]">
         <img src="../../assets/SVGs/Circles.svg" alt="">
       </div>
 
-      <div class="col-[2_/_2] row-[1_/_-1]">
-        <img class="min-w-[430px] min-h-[550px] mt-10" src="../../assets/SVGs/Sign up page photo.svg" alt="">
+      <div class="col-[2_/_12] justify-self-center lg:col-[1_/_6] row-[4_/_-1] lg:row-[1_/_-1]">
+        <img class="min-w-[200px] min-h-[230px] max-w-[430px] max-h-[550px] mt-10" src="../../assets/SVGs/Sign up page photo.svg" alt="">
       </div>
 
-      <div class="ml-8 col-[6_/_-1] self-center row-[1_/_-1]">
-        <p class="text-3xl self-center font-semibold">Create an account</p>
-        <p class="text-lg mt-4 self-start font-medium max-w-[400px]">You can create your account with simple easy steps and start enjoying your time!</p>
+      <div class="text-center lg:text-left col-[2_/_12] lg:col-[6_/_-1] row-[1_/_-1] flex flex-col items-center lg:block lg:self-center order-first lg:order-last">
+        <p class="text-2xl lg:text-3xl font-semibold">Create an account</p>
+        <p class="text-base lg:text-lg mt lg:ml-0 font-medium max-w-[400px]">You can create your account with simple easy steps and start enjoying your time!</p>
       </div>
     </div>
 
@@ -89,17 +89,17 @@
 
 
     <div class="max-w-[1200px] grid grid-cols-12 grid-rows-1">
-      <div class="scale-x-[-1] col-[8_/_-1] row-[1_/_-1]">
+      <div class="col-[2_/_12] justify-self-center lg:col-[8_/_-1] row-[4_/_-1] lg:row-[1_/_-1] scale-x-[-1]">
         <img src="../../assets/SVGs/Circles.svg" alt="">
       </div>
 
-      <div class="scale-x-100 col-[7_/_-1] row-[1_/_-1]">
-        <img class="min-w-[430px] min-h-[550px] mt-10 ml-20" src="../../assets/SVGs/Styles page photo.svg" alt="">
+      <div class="scale-x-100 col-[1_/_12] justify-self-center lg:col-[7_/_-1] row-[4_/_-1] lg:row-[1_/_-1]">
+        <img class="min-w-[] min-h-[] max-w-[430px] max-h-[550px] mt-10 ml-20" src="../../assets/SVGs/Styles page photo.svg" alt="">
       </div>
 
-      <div class="ml-8 col-[3_/_-1] self-center row-[1_/_-1]">
-        <p class="text-3xl self-center font-semibold">Choose your style</p>
-        <p class="text-lg mt-4 self-start font-medium max-w-[400px]">Once you have created an account, you can choose your style and start swiping!</p>
+      <div class="text-center lg:text-left text col-[3_/_11] lg:col-[3_/_-1] self-center row-[1_/_-1] order-first lg:order-last flex flex-col items-center">
+        <p class="text-3xl lg:self-start font-semibold">Choose your style</p>
+        <p class="text-lg mt-4 lg:ml-0 lg:self-start font-medium max-w-[400px]">Once you have created an account, you can choose your style and start swiping!</p>
       </div>
     </div>
 
@@ -108,19 +108,22 @@
 
 
     <div class="max-w-[1200px] grid grid-cols-12 grid-rows-1 ">
-      <div class="col-[1_/_6] row-[1_/_-1]">
+      <div class="col-[2_/_12] justify-self-center lg:col-[1_/_6] row-[4_/_-1] lg:row-[1_/_-1]">
         <img src="../../assets/SVGs/Circles.svg" alt="">
       </div>
 
-      <div class="col-[2_/_2] row-[1_/_-1] flex flex-row w-full max-w-[650px] max-h-[780px] min-w-[500px] min-h-[720px] mt-20 ml-10">
+      <div
+      class="col-[2_/_12] justify-center lg:justify-start justify-self-center lg:justify-self-start
+      lg:col-[2_/_12] row-[4_/_-1] lg:row-[1_/_-1] flex flex-row w-full
+      max-w-[650px] max-h-[780px] min-w-[300px] min-h-[720px] mt-20">
         <app-card
               [backgroundColor]="'bg-primary_off_white'"
               [shadowColor]="'drop-shadow-[0_0_10px_rgba(255,104,104,0.2)]'"></app-card>
       </div>
 
-      <div class="ml-8 col-[6_/_-1] self-center row-[1_/_-1]">
-        <p class="text-3xl self-center font-semibold">Start swiping!</p>
-        <p class="text-lg mt-4 self-start font-medium max-w-[400px]">Now you are set to start! all you need is to choose either if you like the style or not and leave the rest for us!</p>
+      <div class="lg:block text-center lg:text-left col-[2_/_12] lg:col-[6_/_-1] row-[1_/_-1] flex flex-col items-center lg:self-center order-first lg:order-last">
+        <p class="text-3xl font-semibold">Start swiping!</p>
+        <p class="text-lg mt-4 font-medium max-w-[400px]">Now you are set to start! all you need is to choose either if you like the style or not and leave the rest for us!</p>
       </div>
     </div>
 
@@ -191,7 +194,7 @@
 </section>
 
 
-<footer class="flex justify-center border-t border-black py-20">
+<footer class="flex justify-center border-t border-black py-10">
   <div class="max-w-[1200px] w-full flex justify-between">
 
     <div class="flex flex-col">
