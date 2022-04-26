@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { BurgerMenuToggleDirective } from './header/burger-menu-toggle.directive';
 import { CardComponent } from './card/card.component';
+import { SwipingPageComponent } from './swiping-page/swiping-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CardComponent } from './card/card.component';
     HeaderComponent,
     HomePageComponent,
     BurgerMenuToggleDirective,
-    CardComponent
+    CardComponent,
+    SwipingPageComponent
   ],
   imports: [
     BrowserModule,
