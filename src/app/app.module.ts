@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { BurgerMenuToggleDirective } from './header/burger-menu-toggle.directive';
 import { CardComponent } from './card/card.component';
 import { SwipingPageComponent } from './swiping-page/swiping-page.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SwipingPageComponent } from './swiping-page/swiping-page.component';
     HomePageComponent,
     BurgerMenuToggleDirective,
     CardComponent,
-    SwipingPageComponent
+    SwipingPageComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,
