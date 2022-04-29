@@ -39,7 +39,8 @@
         </h4>
         <button
           class="bg-secondary_off_white text-primary_red md:bg-primary_red md:text-secondary_off_white py-4 md:py-6 px-8 md:px-10 mt-10 font-bold rounded-2xl text-l md:text-xl drop-shadow-[0_0_2px_rgba(49,49,49,0.4)] md:drop-shadow-[0_0_6px_rgba(255,104,104,0.6)]"
-        >
+          [routerLink]="['/create-account']"
+          >
           Create Account
         </button>
       </div>
@@ -321,11 +322,11 @@
     <div class="flex flex-col items-center md:items-start">
       <p class="font-bold mb-3">Site map</p>
       <ul class="text-center md:text-left">
-        <li>Create account</li>
-        <li>About</li>
-        <li>How it works</li>
-        <li>Developer</li>
-        <li>Donate</li>
+        <li><a routerLink="/create-account">Create account</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#developer">Developer</a></li>
+        <li><a href="#donate">Donate</a></li>
       </ul>
     </div>
 
@@ -367,14 +368,10 @@
 
     <div class="flex flex-col justify-center">
       <div class="flex flex-col items-center pt-12">
-        <p class="font-extrabold text-4xl">Outfitted.</p>
+        <a routerLink="/" class="font-extrabold text-4xl">Outfitted.</a>
         <p class="text-sm font-base">©All rights reserved</p>
         <p class="mt-8 text-xs">Designed and developed by <b>Hussein</b></p>
       </div>
     </div>
   </div>
 </footer>
-
-<app-swiping-page></app-swiping-page>
-<app-create-account></app-create-account>
-<app-log-in></app-log-in>

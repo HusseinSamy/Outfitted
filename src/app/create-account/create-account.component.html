@@ -1,5 +1,6 @@
-<section class="flex flex-col items-center bg-primary_off_white py-10">
-  <p class="text-3xl font-bold mb-12">Create Account</p>
+<section class="flex flex-col justify-evenly bg-primary_off_white py-10 min-h-[900px] h-screen">
+  <div class="flex flex-col items-center w-full">
+  <p class="text-3xl font-bold py-10">Create Account</p>
   <form
     [formGroup]="form"
     (ngSubmit)="onSubmit()"
@@ -82,14 +83,15 @@
       >
         Create Account
       </button>
-      <a href="#" class="text-primary_red text-sm pt-5"
+      <a routerLink="/log-in" class="text-primary_red text-sm pt-5"
         >already have an account?</a
       >
     </div>
   </form>
-</section>
+</div>
 
-<footer class="flex justify-center py-10 bg-primary_off_white">
+
+<div class="flex justify-center mt-5 bg-primary_off_white w-full">
   <div
     class="max-w-[1200px] w-full flex flex-col flex-wrap md:flex-row items-center justify-between px-5 lg:px-0"
   >
@@ -133,9 +135,11 @@
 
     <div class="flex flex-col justify-center">
       <div class="flex flex-col items-center pt-12">
-        <a href="#home" class="font-extrabold text-4xl">Outfitted.</a>
+        <a routerLink="/" class="font-extrabold text-4xl">Outfitted.</a>
         <p class="text-sm font-base">©All rights reserved</p>
       </div>
     </div>
   </div>
-</footer>
+</div>
+</section>
+

@@ -5,10 +5,12 @@
     <div class="flex justify-between">
       <div>
         <!-- Website Logo -->
-        <a href="#home" class="flex items-center py-6">
-          <span
+        <a routerLink="/" class="flex items-center py-6">
+          <a
             class="font-bold font-poppins text-secondary_off_white md:text-black text-3xl lg:text-4xl"
-            >Outfitted.</span
+            routerLink="/"
+            >
+            Outfitted.</a
           >
         </a>
       </div>
@@ -27,7 +29,8 @@
       <div class="hidden md:flex items-center space-x-3">
         <button
           class="bg-secondary_off_white text-primary_red py-3 px-5 font-bold font-poppins rounded-2xl text-sm lg:text-lg"
-        >
+          routerLink="/create-account"
+          >
           Create Account
         </button>
       </div>

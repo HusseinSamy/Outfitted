@@ -11,6 +11,7 @@ import { CardComponent } from './card/card.component';
 import { SwipingPageComponent } from './swiping-page/swiping-page.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LogInComponent } from './log-in/log-in.component';
     CardComponent,
     SwipingPageComponent,
     CreateAccountComponent,
-    LogInComponent
+    LogInComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
