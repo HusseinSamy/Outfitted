@@ -10,8 +10,8 @@ class="w-full h-full max-w-[325px] max-h-[580px]
     src="{{imgSource}}"
     alt="Card Image">
   </div>
-  <div class="flex justify-evenly mt-8">
-    <div class="py-0.5 px-3 flex justify-center bg-primary_off_white drop-shadow-[0_3px_4px_rgba(0,0,0,0.05)] rounded-3xl" *ngFor="let tag of tags">
+  <div class="flex justify-between mt-5 p-2 overflow-y-hidden no-scrollbar">
+    <div class="py-0.5 px-3 bg-primary_off_white drop-shadow-[0_3px_4px_rgba(0,0,0,0.05)] rounded-3xl" *ngFor="let tag of tags">
       {{tag}}
     </div>
   </div>

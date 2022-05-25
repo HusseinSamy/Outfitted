@@ -27,6 +27,7 @@ module.exports = {
         "row-custom-layout": "88px repeat(4, minmax(0,1fr))",
       },
     },
-    plugins: [],
+    plugins: [
+    ]
   },
 };

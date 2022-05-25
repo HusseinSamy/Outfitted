@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
 
   @Input() !imgSource: string = '../../assets/Photos/home page photo 1.jpg';
-  tags: string[] = ['trousers','bags','shoes'];
+  tags: string[] = ['trousers','bags','shoes', 'dlskafj', 'sdlkaf','dajlk'];
   @Input() backgroundColor: string = '';
   @Input() shadowColor: string = '';
 

@@ -12,6 +12,8 @@ import { SwipingPageComponent } from './swiping-page/swiping-page.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { PhotoDataUploadComponent } from './photo-data-upload/photo-data-upload.component';
+import { PhotoSearchComponent } from './photo-search/photo-search.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     SwipingPageComponent,
     CreateAccountComponent,
     LogInComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    PhotoDataUploadComponent,
+    PhotoSearchComponent
   ],
   imports: [
     BrowserModule,

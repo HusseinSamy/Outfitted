@@ -1,0 +1,169 @@
+<header class="pt-6">
+  <div class="flex justify-center">
+    <div class="max-w-[1200px] w-full px-2">
+      <div class="flex justify-between cursor-pointer">
+        <a routerLink="/" class="text-4xl font-extrabold">Outfitted.</a>
+        <button
+        class="bg-primary_red text-secondary_off_white py-3 px-6 font-bold rounded-lg text-sm md:text-base"
+        (click)="onClick()"
+        *ngIf="searchById == false"
+      >
+        Search by id
+      </button>
+      <button
+        class="bg-primary_red text-secondary_off_white py-3 px-6 font-bold rounded-lg text-sm md:text-base"
+        (click)="onClick()"
+        *ngIf="searchById == true"
+      >
+        Search by tags
+      </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section
+  class="flex justify-center items-center min-h-[900px] bg-primary_off_white py-12"
+>
+  <div class="flex flex-col justify-around w-full max-w-[1200px]">
+    <div
+      class="flex justify-center items-center w-full"
+    >
+      <div class="flex-col">
+        <form
+        [formGroup]="tags_search"
+        (ngSubmit)="onSubmit()"
+        *ngIf="searchById == false">
+          <div class="flex flex-col w-[325px] space-y-3 w-full">
+            <input
+              type="text"
+              name="top"
+              placeholder="Top"
+              formControlName="top"
+              class="bg-gray rounded-md h-10 w-full px-5 text-xs font-semibold"
+            />
+
+            <input
+              type="text"
+              name="bottom"
+              placeholder="Bottom"
+              formControlName="bottom"
+              class="bg-gray rounded-md h-10 w-full px-5 text-xs font-semibold"
+            />
+
+            <input
+              type="text"
+              name="footwear"
+              placeholder="Footwear"
+              formControlName="footwear"
+              class="bg-gray rounded-md h-10 w-full px-5 text-xs font-semibold"
+            />
+
+            <input
+              type="text"
+              name="accessory"
+              placeholder="Accessory"
+              formControlName="accessory"
+              class="bg-gray rounded-md h-10 w-full px-5 text-xs font-semibold"
+            />
+
+            <input
+              type="text"
+              name="style"
+              placeholder="Style"
+              formControlName="style"
+              class="bg-gray rounded-md h-10 w-full px-5 text-xs font-semibold"
+            />
+            <input
+              type="text"
+              name="gender"
+              placeholder="Gender"
+              formControlName="gender"
+              class="bg-gray rounded-md h-10 w-full px-5 text-xs font-semibold"
+            />
+
+            <div class="flex py-10 justify-end w-full">
+              <button
+                class="bg-primary_red text-secondary_off_white py-3 font-bold rounded-lg text-base w-1/2"
+              >
+                Search
+              </button>
+            </div>
+            <p class="text-center font-semibold text-base text-primary_red">
+              Fill in at least one of the inputs to be able to search, but
+              preferably fill them all.
+            </p>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+      <div class="flex-col">
+        <form [formGroup]="id_search" (ngSubmit)="onSubmit()" *ngIf="searchById == true">
+          <div class="flex flex-col w-[325px] space-y-3 w-full">
+            <input
+              type="number"
+              name="id"
+              placeholder="id"
+              formControlName="id"
+              class="bg-gray rounded-md h-10 w-full px-5 text-xs font-semibold"
+            />
+
+
+            <div class="flex py-10 justify-end w-full">
+              <button
+                class="bg-primary_red text-secondary_off_white py-3 font-bold rounded-lg text-base w-1/2"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+    <!-- <div class="flex justify-center">
+      <div class="max-w-[1200px] w-full flex justify-center">
+        <div class="flex justify-start flex-wrap gap-6 px-10">
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+          <div
+            class="max-w-[300px] min-w-[200px] min-h-[355px] max-h-[435px] flex-grow rounded-lg bg-primary_red md:m-0"
+          ></div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>

@@ -10,3 +10,15 @@ input.ng-touched.ng-invalid
 
 input.ng-touched
   border: 1px solid green
+
+@layer utilities
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar
+      display: none
+
+
+    .no-scrollbar
+      -ms-overflow-style: none /* IE and Edge */
+      scrollbar-width: none /* Firefox */
+
+
