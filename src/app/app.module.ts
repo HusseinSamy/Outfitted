@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { PhotoDataUploadComponent } from './photo-data-upload/photo-data-upload.component';
 import { PhotoSearchComponent } from './photo-search/photo-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { PhotoSearchComponent } from './photo-search/photo-search.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ImageCropperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

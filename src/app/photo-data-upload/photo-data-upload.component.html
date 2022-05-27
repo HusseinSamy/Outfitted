@@ -3,7 +3,7 @@
     <div class="flex justify-center">
       <div class="max-w-[1200px] w-full px-2">
         <div class="flex justify-between cursor-pointer">
-          <a routerLink="/" class="text-4xl font-extrabold">Outfitted.</a>
+          <a routerLink="/" class="text-4xl font-bold">Outfitted.</a>
         </div>
       </div>
     </div>
@@ -14,18 +14,31 @@
     <div class="flex justify-center md:justify-start w-full">
       <app-card
       [backgroundColor]="'bg-primary_off_white'"
-      shadowColor="drop-shadow-[0_0_6px_rgba(0,0,0,0.2)]"
+      [shadowColor]="'drop-shadow-[0_0_6px_rgba(0,0,0,0.2)]'"
+      imgSource= "{{croppedImage}}"
     ></app-card>
     </div>
 
     <div class="flex justify-center md:justify-end w-full pt-12 md:pt-0">
     <div class="flex-col">
-      <a class="flex justify-end pb-10 font-bold text-sm text-primary_red" routerLink="/photo-search">Edit existing photo</a>
+      <div class="flex justify-end">
+        <a class="mb-10 font-bold text-sm text-primary_red" routerLink="/photo-search">Edit existing photo</a>
+      </div>
       <form
         [formGroup]="form"
         (ngSubmit)="onSubmit()"
       >
-        <div class="flex flex-col w-[325px] space-y-3 w-full">
+        <div class="flex flex-col w-[325px] space-y-3">
+
+          <input type="file" (change)="fileChangeEvent($event)" />
+              <image-cropper
+
+              [imageChangedEvent]="imageChangedEvent"
+              [maintainAspectRatio]="false"
+              [containWithinAspectRatio]="true"
+              format="webp"
+              (imageCropped)="imageCropped($event)"
+              ></image-cropper>
           <input
             type="text"
             name="top"
@@ -89,18 +102,32 @@
           >
           <input
             type="text"
-            name="gender"
-            placeholder="Gender"
-            formControlName="gender"
+            name="socks"
+            placeholder="Socks"
+            formControlName="socks"
             class="bg-gray rounded-md h-10 w-full px-5 text-xs font-semibold"
           />
           <span
             class="text-xs font-semibold text-primary_red"
-            *ngIf="!form.get('gender')!.valid && form.get('gender')!.touched"
+            *ngIf="!form.get('socks')!.valid && form.get('socks')!.touched"
             >Required field!</span
           >
+          <div class="flex justify-start items-center align-middle">
+            <div class="mr-3" *ngFor="let gender of genders">
+              <input
+                type="radio"
+                [value]="gender"
+                [id]="gender"
+                formControlName="gender"
+                class="accent-primary_red mr-1"
+              />
+              <label [for]="gender" class="font-medium text-sm">{{
+                gender
+              }}</label>
+            </div>
+          </div>
 
-          <div class="flex pt-10 justify-end w-full">
+          <div class="flex py-10 justify-end w-full">
             <button
               class="bg-primary_red text-secondary_off_white py-3 font-bold rounded-lg text-base w-1/2"
               routerLink="/main"

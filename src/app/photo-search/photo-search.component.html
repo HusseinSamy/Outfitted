@@ -2,7 +2,7 @@
   <div class="flex justify-center">
     <div class="max-w-[1200px] w-full px-2">
       <div class="flex justify-between cursor-pointer">
-        <a routerLink="/" class="text-4xl font-extrabold">Outfitted.</a>
+        <a routerLink="/" class="text-4xl font-bold">Outfitted.</a>
         <button
         class="bg-primary_red text-secondary_off_white py-3 px-6 font-bold rounded-lg text-sm md:text-base"
         (click)="onClick()"
@@ -34,7 +34,7 @@
         [formGroup]="tags_search"
         (ngSubmit)="onSubmit()"
         *ngIf="searchById == false">
-          <div class="flex flex-col w-[325px] space-y-3 w-full">
+          <div class="flex flex-col w-[325px] space-y-3 ">
             <input
               type="text"
               name="top"
@@ -103,7 +103,7 @@
 
       <div class="flex-col">
         <form [formGroup]="id_search" (ngSubmit)="onSubmit()" *ngIf="searchById == true">
-          <div class="flex flex-col w-[325px] space-y-3 w-full">
+          <div class="flex flex-col w-[325px] space-y-3">
             <input
               type="number"
               name="id"
