@@ -18,7 +18,7 @@
       <span
         class="text-xs font-semibold text-primary_red"
         *ngIf="!form.get('email')!.valid && form.get('email')!.touched"
-        >Please enter a valid emial!</span
+        >Please enter a valid email!</span
       >
 
       <input
@@ -37,7 +37,7 @@
       <div class="pt-10 w-full">
         <button
           class="bg-primary_red text-secondary_off_white py-2 w-full font-bold rounded-lg text-xs"
-          routerLink="/main"
+          [disabled]="this.form.status !== 'VALID'"
           >
           Log In
         </button>

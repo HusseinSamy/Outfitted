@@ -84,6 +84,7 @@
         <div class="flex justify-start items-center align-middle">
           <div class="mr-3" *ngFor="let gender of genders">
             <input
+              name="gender"
               type="radio"
               [value]="gender"
               [id]="gender"
@@ -98,6 +99,7 @@
       </div>
       <button
         class="bg-primary_red text-secondary_off_white py-2 w-full font-bold rounded-lg text-xs"
+        [disabled]="this.form.status !== 'VALID'"
       >
         Create Account
       </button>
