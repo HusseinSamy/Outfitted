@@ -1,8 +1,28 @@
 <!-- HERO AREA -->
+
+
 <section
-  class="grid grid-cols-12 grid-rows-row-custom-layout overflow-x-hidden max-h-[900px] md:max-h-[1080px]"
-  id="home"
+class="grid grid-cols-12 grid-rows-row-custom-layout overflow-x-hidden max-h-[900px] md:max-h-[1080px] bg-primary_off_white"
+id="home back"
 >
+
+<div class="h-screen w-screen backdrop-blur-md z-40 fixed"
+*ngIf="popUp.popUp">
+
+  <div class="fixed min-w-[50%] max-w-[800px] w-full z-50 px-10 py-20 shadow-2xl bg-primary_off_white top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] rounded-2xl">
+    <div class="flex-col justify-center items-center flex">
+      <p class="text-black font-semibold text-center">Hi! <br> this is a message from the developer and I want to note that the website is still under development and there is no back end yet, this is a personal project and I working on it on my own, but I want to share it with the world, so here we are!</p>
+      <button
+          class="bg-primary_red
+           text-primary_off_white py-4 md:py-3 px-6 md:px-8 mt-10 font-semibold rounded-2xl
+           text-l md:text-base"
+          (click)="popUp.onPopUpClick()">
+          Okay, I understand.
+        </button>
+
+    </div>
+  </div>
+</div>
   <app-header class="row-[1_/_1] col-span-full z-10"></app-header>
 
   <div
@@ -29,7 +49,7 @@
         <h1
           class="text-5xl xl:text-6xl font-bold text-secondary_off_white md:text-black min-w-[250px]"
         >
-          We know What Suits You The Best.
+          We Know What Suits You The Best.
         </h1>
         <h4
           class="text-sm md:text-lg text-secondary_off_white md:text-black mt-5 font-medium"
@@ -58,7 +78,7 @@
         </div>
 
         <div
-          class="mb-3 mt-32 hidden lg:block max-w-[325px] max-h-[580px] min-w-[240px] min-h-[435px] w-[100%] h-auto"
+          class="mb-3 mt-44 hidden lg:block max-w-[325px] max-h-[580px] min-w-[240px] min-h-[435px] w-[100%] h-auto"
         >
           <app-card
             [backgroundColor]="'bg-secondary_off_white'"
@@ -224,7 +244,7 @@
           have studied the technologies needed to develop it which is:<br /><br />
           <b>
             • Angular<br />
-            • Node.js<br />
+            • .Net Framework<br />
             • SQL<br />
             • Version control systems (git)<br />
             • Package managers (NPM)<br />
@@ -263,7 +283,7 @@
             src="../../assets/SVGs/Twitter Logo.svg"
             alt=""
         /></a>
-        <a target="_blank" href="https://www.linkedin.com/in/hussein-samy-553a4b191/"
+        <a target="_blank" href="https://www.linkedin.com/in/hussein-samy/"
           ><img
             class="max-w-[35px] max-h-[35px]"
             src="../../assets/SVGs/Linked In Logo.svg"
@@ -357,7 +377,7 @@
             src="../../assets/SVGs/Twitter Logo.svg"
             alt=""
         /></a>
-        <a target="_blank" href="https://www.linkedin.com/in/hussein-samy-553a4b191/"
+        <a target="_blank" href="https://www.linkedin.com/in/hussein-samy"
           ><img
             class="max-w-[30px] max-h-[30px]"
             src="../../assets/SVGs/Linked In Logo.svg"

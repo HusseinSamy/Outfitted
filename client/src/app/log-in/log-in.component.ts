@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
@@ -12,6 +12,8 @@ export class LogInComponent implements OnInit {
   form: FormGroup = new FormGroup({});
   baseUrl: string = 'https://localhost:5001/api/';
 
+
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -22,17 +24,16 @@ export class LogInComponent implements OnInit {
   }
 
   onSubmit(){
-    //BROKEN CODE
-  //   let data: any = JSON.stringify(this.form.value);
-  //   const headers= new HttpHeaders()
-  //   .set('Email', this.form.value['email'])
-  //   .set('Password', this.form.value['password']);
-
-  // this.http.get(this.baseUrl + 'Account/Login/${this.form.value["email"]}/${this.form.value["password"]}').subscribe({
-  //       next: response =>{
-  //         localStorage.setItem('user',JSON.stringify(response));
-  //         console.log(response)
-  //       }
-  //     });
+    const email: string = this.form.value["email"];
+    const password: string = this.form.value["password"];
+  this.http.get(this.baseUrl + 'Account/Login/' + email + '/' + password).subscribe({
+        next: response =>{
+          localStorage.setItem('user',JSON.stringify(response));
+          console.log(response);
+        },
+        error: error => {
+          console.log(error);
+        }
+      });
   }
 }

@@ -1,0 +1,17 @@
+Casual
+Office Wear
+Sports Wear
+Classic
+Exotic
+Street
+Vintage
+Chic
+Arty
+Preppy
+Bohemian
+Goth
+Grunge
+Flamboyant
+Punk
+Rocker
+Tomboy
