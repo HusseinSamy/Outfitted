@@ -17,3 +17,5 @@ outfitted is still under development and there is a ton of features to add, what
 * Users will be able to see a swiping page that will display photos based on what they have chosen as there preferences. 
 * Users will be able to save the photos that they have liked for inspiration. 
 * Admins will be able to create, read, update, delete photos to the database and adding the relevant tags for each photo (CRUD operations).
+
+You can find the project at: [outfitted.me](outfitted.me)
