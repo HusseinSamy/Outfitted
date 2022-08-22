@@ -97,9 +97,11 @@
           </div>
         </div>
       </div>
+      <!-- [disabled]="this.form.status !== 'VALID' -->
       <button
+        routerLink="/upload-photo"
         class="bg-primary_red text-secondary_off_white py-2 w-full font-bold rounded-lg text-xs"
-        [disabled]="this.form.status !== 'VALID'"
+
       >
         Create Account
       </button>
