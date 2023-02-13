@@ -37,7 +37,8 @@
       <div class="pt-10 w-full">
         <button
           class="bg-primary_red text-secondary_off_white py-2 w-full font-bold rounded-lg text-xs"
-          [disabled]="this.form.status !== 'VALID'"
+          [ngClass]="{'text-black text-opacity-50': this.form.invalid}"
+          [disabled]="this.form.invalid"
           >
           Log In
         </button>
