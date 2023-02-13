@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-log-in',
@@ -14,7 +15,7 @@ export class LogInComponent implements OnInit {
 
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -29,10 +30,14 @@ export class LogInComponent implements OnInit {
   this.http.get(this.baseUrl + 'Account/Login/' + email + '/' + password).subscribe({
         next: response =>{
           localStorage.setItem('user',JSON.stringify(response));
-          console.log(response);
+      console.log(response);
+      this.router.navigate(['/main'])
+
         },
         error: error => {
           console.log(error);
+      this.router.navigate(['/main'])
+
         }
       });
   }
